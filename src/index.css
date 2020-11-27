@@ -1,13 +1,120 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f5f8;
+}
+
+.header {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.header .title {
+  font-size: 2.5rem;
+}
+
+.header .underline {
+  background-color: #49a6e9;
+  width: 6rem;
+  height: 0.2rem;
+  margin: 0 auto;
+}
+
+.tours-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 1.5rem;
+  min-height: 30rem;
+  max-width: 40rem;
+}
+
+.tour .tour-image {
+  height: 20rem;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tour .tour-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tour .description-container {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tour .description-container .tour-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.tour .description-container .description {
+  margin-bottom: 1rem;
+  color: #617d98;
+}
+
+.tour .description-container .description button {
+  color: #49a6e9;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  display: inline;
+}
+
+.tour .description-container button {
+  display: block;
+  margin-bottom: 1rem;
+  color: #bb2525;
+  border: 1px solid #bb2525;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: transparent;
+  padding: 0.3rem;
+  outline: none;
+  font-size: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+
+.tour .price {
+  background-color: #ebf7ff;
+  color: #49a6e9;
+  padding:0.2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
